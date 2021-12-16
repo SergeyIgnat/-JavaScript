@@ -29,6 +29,9 @@
     и выведите их в консоль. -->
 
     <script>
+        let searchSelector = document.querySelectorAll('div .card-link');
+        console.log(searchSelector);
+        searchSelector.forEach(el=>console.log(el.innerHTML));
 
     </script>
 </body>

@@ -19,7 +19,12 @@
     -->
 
     <script>
-        
+        let allBTags = document.querySelectorAll('b');
+        allBTags.forEach(function (el) {
+            if (!el.classList.contains('sign')) {
+                el.classList.add('sign');
+            }
+        })
     </script>
 </body>
 </html>

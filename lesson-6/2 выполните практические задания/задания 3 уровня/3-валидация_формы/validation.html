@@ -36,7 +36,19 @@
      -->
 
     <script>
-        
+        let formEl = document.querySelector('form');
+        let inputFirst = document.querySelector('input#first');
+        let inputSecond = document.querySelector('input#second');
+        formEl.addEventListener('submit', event => {
+            if (!inputFirst.value) {
+                inputFirst.style.borderColor = 'red';
+                event.preventDefault();
+            }
+            if (!inputSecond.value) {
+                inputSecond.style.borderColor = 'red';
+                event.preventDefault();
+            }
+        })
     </script>
 </body>
 </html>

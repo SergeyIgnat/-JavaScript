@@ -44,8 +44,15 @@
         
 		
 		function buttonClickHandler(event) {
-		
+            event.target.parentNode.style.backgroundColor = 'lightgreen';
+            event.target.innerText = 'Добавлено';
 		}
+
+        let buttons = document.querySelectorAll('button');
+        buttons.forEach(el => {
+            el.addEventListener('click', buttonClickHandler);
+        });
+
     </script>
 </body>
 </html>

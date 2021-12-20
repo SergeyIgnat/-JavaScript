@@ -20,7 +20,13 @@
     -->
 
     <script>
-        
+        let dataButtons = document.querySelectorAll('button');
+        dataButtons.forEach(el => {
+            for (dataAttr in el.dataset) {
+                console.log(dataAttr, el.dataset[dataAttr]);
+            }
+            
+        })
     </script>
 </body>
 </html>

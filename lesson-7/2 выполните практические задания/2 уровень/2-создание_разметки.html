@@ -20,6 +20,12 @@
         <img src="https://picsum.photos/200/300?random=${счетчик_цикла_здесь}" alt="pic${счетчик_цикла_здесь}">
         */
        
+
+       let picNumber = 8;
+       for (let i = picNumber; i > 0; i--) {
+           document.body.insertAdjacentHTML('afterbegin', `<img src="https://picsum.photos/200/300?random=${i}" alt="pic${i}">`);
+       }
+       
     </script>
 </body>
 </html>
